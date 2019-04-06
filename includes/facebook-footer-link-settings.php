@@ -47,7 +47,7 @@ function ffl_options_content(){
                                 <label for="ffl_settings[link_color]"><?php _e('Link Color', 'ffl_domain'); ?></label>
                             </th>
                             <td>
-                                <input type="text" name="ffl_settings[link_color]" id="ffl_settings[link_color]" value="<?php echo $ffl_options['facebook_url']; ?>" class="regular-text">
+                                <input type="text" name="ffl_settings[link_color]" id="ffl_settings[link_color]" value="<?php echo $ffl_options['link_color']; ?>" class="regular-text">
                                 <p class="description"> <?php _e('Enter a Color or Hex Value #', 'ffl_domain'); ?> </p>
                             </td>
                         </tr>
