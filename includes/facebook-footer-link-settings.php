@@ -44,6 +44,15 @@ function ffl_options_content(){
                         </tr>
                         <tr>
                             <th scope="row">
+                                <label for="ffl_settings[instagram_url]"><?php _e('Instagram Profile URL', 'ffl_domain'); ?></label>
+                            </th>
+                            <td>
+                                <input type="text" name="ffl_settings[instagram_url]" id="ffl_settings[instagram_url]" value="<?php echo $ffl_options['instagram_url']; ?>" class="regular-text">
+                                <p class="description"> <?php _e('Enter Your Instagram Profile URL', 'ffl_domain'); ?> </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
                                 <label for="ffl_settings[link_color]"><?php _e('Link Color', 'ffl_domain'); ?></label>
                             </th>
                             <td>
