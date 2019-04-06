@@ -2,3 +2,25 @@
     content: "\f304";
     line-height: 37px;
 }
+
+.entry .entry-content a {
+    text-decoration: none;
+}
+
+ul.footer-social-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li.footer-social-link {
+    float: left;
+  }
+  
+  li.footer-social-link a {
+    display: inline;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
