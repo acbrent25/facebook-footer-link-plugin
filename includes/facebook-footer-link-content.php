@@ -8,12 +8,36 @@ function ffl_add_footer($content){
     <hr>
     <div class="footer_content">
         <ul class="footer-social-links">
-            <li class="footer-social-link">
-                <a style="color:<?php echo $ffl_options['link_color'] ?>" href="<?php echo $ffl_options['facebook_url']; ?>" target="_blank"><i class="fab fa-facebook-square"></i></a>
-            </li>  
-            <li>
-                <a style="color:<?php echo $ffl_options['link_color'] ?>" href="<?php echo $ffl_options['instagram_url']; ?>" target="_blank"><i class="fab fab fa-instagram"></i></a>
-            </li>     
+            <?php if(isset($ffl_options['facebook_url'])){ ?>
+                <li>
+                    <a style="color:<?php echo $ffl_options['link_color'] ?>" href="<?php echo $ffl_options['facebook_url']; ?>" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                </li> 
+            <?php } ?>
+            
+            <?php if(isset($ffl_options['instagram_url'])){ ?>
+                <li>
+                    <a style="color:<?php echo $ffl_options['link_color'] ?>" href="<?php echo $ffl_options['instagram_url']; ?>" target="_blank"><i class="fab fab fa-instagram"></i></a>
+                </li> 
+            <?php } ?>
+            
+            <?php if(isset($ffl_options['twitter_url'])){ ?> 
+                <li>
+                    <a style="color:<?php echo $ffl_options['link_color'] ?>" href="<?php echo $ffl_options['twitter_url']; ?>" target="_blank"><i class="fab fab fa-twitter-square"></i></a>
+                </li> 
+            <?php } ?>
+            
+            <?php if(isset($ffl_options['pinterest_url'])){ ?>
+                <li>
+                    <a style="color:<?php echo $ffl_options['link_color'] ?>" href="<?php echo $ffl_options['pinterest_url']; ?>" target="_blank"><i class="fab fab fa-pinterest-square"></i></a>
+                </li>
+            <?php } ?>
+
+            <?php if(isset($ffl_options['linkedin_url'])){ ?>
+                <li>
+                    <a style="color:<?php echo $ffl_options['link_color'] ?>" href="<?php echo $ffl_options['linkedin_url']; ?>" target="_blank"><i class="fab fab fa-linkedin"></i></a>
+                </li>
+            <?php } ?>
+
         </ul>
     </div>
 

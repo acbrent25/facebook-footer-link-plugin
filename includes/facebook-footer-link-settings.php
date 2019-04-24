@@ -53,6 +53,33 @@ function ffl_options_content(){
                         </tr>
                         <tr>
                             <th scope="row">
+                                <label for="ffl_settings[twitter_url]"><?php _e('Twitter Profile URL', 'ffl_domain'); ?></label>
+                            </th>
+                            <td>
+                                <input type="text" name="ffl_settings[twitter_url]" id="ffl_settings[twitter_url]" value="<?php echo $ffl_options['twitter_url']; ?>" class="regular-text">
+                                <p class="description"> <?php _e('Enter Your Twitter Profile URL', 'ffl_domain'); ?> </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <label for="ffl_settings[pinterest_url]"><?php _e('Pinterest Profile URL', 'ffl_domain'); ?></label>
+                            </th>
+                            <td>
+                                <input type="text" name="ffl_settings[pinterest_url]" id="ffl_settings[pinterest_url]" value="<?php echo $ffl_options['pinterest_url']; ?>" class="regular-text">
+                                <p class="description"> <?php _e('Enter Your Pinterest Profile URL', 'ffl_domain'); ?> </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <label for="ffl_settings[linkedin_url]"><?php _e('LinkedIn Profile URL', 'ffl_domain'); ?></label>
+                            </th>
+                            <td>
+                                <input type="text" name="ffl_settings[linkedin_url]" id="ffl_settings[linkedin_url]" value="<?php echo $ffl_options['linkedin_url']; ?>" class="regular-text">
+                                <p class="description"> <?php _e('Enter Your LinkedIn Profile URL', 'ffl_domain'); ?> </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
                                 <label for="ffl_settings[link_color]"><?php _e('Link Color', 'ffl_domain'); ?></label>
                             </th>
                             <td>
@@ -68,6 +95,15 @@ function ffl_options_content(){
                                 <input type="checkbox" name="ffl_settings[show_in_feed]" id="ffl_settings[show_in_feed]" value="1" <?php checked('1', $ffl_options['show_in_feed']); ?> >
                             </td>
                         </tr>
+                        <tr>
+                            <th scope="row">
+                                <label for="color">test color</label>
+                            </th>
+                            <td>
+                            <input type="text" value="#bada55" class="my-color-field" />
+                            </td>
+                        </tr>
+                        
                     </tbody>
                 </table>
                 <p class="submit"><input type="submit" names="submit" id="submit" class="button button-primary" value="<?php _e('Save Changes', 'ffl_domain'); ?>"></p>
